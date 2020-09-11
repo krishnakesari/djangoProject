@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from pizza import views # 1. Importing Views from pizza
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.home, name='home'), # 2. Adding home page
+    path('order', views.order, name='order'), # 3. Adding a tab / link
 ]
