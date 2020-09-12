@@ -21,4 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'), # 2. Adding home page
     path('order', views.order, name='order'), # 3. Adding a tab / link
+    path('pizzas', views.pizzas, name='pizzas'),
+    path('order/<int:pk>', views.edit_order, name='edit_order'),# pk stands for primary key
 ]
