@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pizza', # 4. Add App Name
+    'widget_tweaks', # Adding Bootstrap
 ]
 
 MIDDLEWARE = [
